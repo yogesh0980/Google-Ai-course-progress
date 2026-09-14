@@ -1,0 +1,26 @@
+Today is my first day of Google-Ai-course
+
+The rise of language models:
+// AI is slow in the start but its growth in the recent years is blow my mind
+
+Only a decade ago, deep learning, a sophisticated class of machine learning methods that provides the foundation of modern language models (LMs), was still considered to be in its early days. However, in a few short years, deep learning and, along with it, research on language models, have risen to become one of the dominant areas within the field of machine learning.  
+
+
+WHY LANGUAGE MODELING MATTERS :
+1. Music generation: Many music traditions, from Brazilian samba to South African amapiano, follow structured patterns. AI models can generate rhythms, harmonies, and lyrics across a range of genres [5].
+
+2. Protein science and drug discovery : Proteins are made up of sequences of amino acids, much like sentences. Models can be trained to predict protein functions and protein structure from these amino acid sequences. The resulting model allows us then to predict potential functions of newly discovered proteins, design new potential proteins, and may assist in drug discovery. For example, models like ProtNLM learn to predict text describing the functional properties of a given protein, defined by its sequence of amino acids  [6] .
+
+3. Climate modeling and weather prediction : Meteorological data is a sequence of temperature, pressure, and atmospheric conditions. While traditional models rely on physics-based simulations, deep learning models have been used to enhance short-term weather prediction and climate modeling 
+
+
+CAPTURING PATTERN WITH PROBABILITIES: 
+   Generating language all comes down to learned rules and patterns. When forming sentences, your mind instinctively chooses words that naturally follow according to the patterns of the language. Aside from making occasional mistakes, your mind does not choose words that do not make sense. 
+
+
+
+   No one explicitly taught you the rules and patterns that guide your predictions, rather you learned them over time by listening to language and using it. The core idea behind language models is similar. Machines learn to generate text by capturing linguistic rules and patterns. They capture these patterns using probabilities. 
+
+
+
+   At a high level, a probability is the extent to which something is likely to happen. For example, the probability of the term “jollof rice” appearing in a collection of texts is higher than the probability of the nonsensical term "jollof dice”. A good language model assigns higher probabilities to words that likely follow in a given context and lower probabilities to words that do not make sense in that context. This is similar to the principle you applied when you chose the next likely word to complete the sentences provided. 
