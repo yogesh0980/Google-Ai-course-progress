@@ -5,3 +5,28 @@
 # Explore how altering the prompt (e.g., changing hungry to thirsty or modifying the subject) influences the probability distribution and the predicted next word.
 
 FOR EXAMPLES AND RUNNING PROGRRAMS CLICK THIS LINK - https://colab.research.google.com/drive/17bLNeibBhT-GRmesCglxIIlVlc1lRfnf#scrollTo=UyTT6C0JhGBs
+
+candidate_words = [
+    "food",
+    "snacks",
+    "leftovers",
+    "her",
+    "for",
+    "water",
+    "photosynthesis",
+    "pyramid",
+]
+
+# Enter the probabilities for the candidate words to follow the
+# prompt "Jide was hungry so she went looking for".
+your_mental_model = [0.47,0.22,0.12,0.05,0.01,0.1,0.02,0.01]
+
+# This function runs several checks to verify that your_mental_model defines
+# a proper probability distribution.
+probabilities.test_probabilities(candidate_words, your_mental_model)
+
+chosen_word = random.choices(candidate_words, weights=your_mental_model)
+
+print(f"Jide was hungry so she went looking for {chosen_word[0]} ...")
+
+                OUTPUT : Jide was hungry so she went looking for food...
