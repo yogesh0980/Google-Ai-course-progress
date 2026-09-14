@@ -15,12 +15,11 @@ WHY LANGUAGE MODELING MATTERS :
 
 
 CAPTURING PATTERN WITH PROBABILITIES: 
-   Generating language all comes down to learned rules and patterns. When forming sentences, your mind instinctively chooses words that naturally follow according to the patterns of the language. Aside from making occasional mistakes, your mind does not choose words that do not make sense. 
+   Generating language all comes down to learned rules and patterns. When forming sentences, your mind instinctively chooses words that naturally follow according to the patterns of the language. Aside from making occasional mistakes, your mind does not choose words that do not make sense.  
 
+   Language models assign probabilities to the next word for a given context and use these probabilities to choose a likely next word. 
 
+   In order to generate entire sentences or texts, the model repeatedly chooses a word according to the probability distribution over the next word and then adds the chosen word to the context. The model then uses this new context to predict the next word until a full sentence or text has been generated. 
 
-   No one explicitly taught you the rules and patterns that guide your predictions, rather you learned them over time by listening to language and using it. The core idea behind language models is similar. Machines learn to generate text by capturing linguistic rules and patterns. They capture these patterns using probabilities. 
-
-
-
-   At a high level, a probability is the extent to which something is likely to happen. For example, the probability of the term “jollof rice” appearing in a collection of texts is higher than the probability of the nonsensical term "jollof dice”. A good language model assigns higher probabilities to words that likely follow in a given context and lower probabilities to words that do not make sense in that context. This is similar to the principle you applied when you chose the next likely word to complete the sentences provided. 
+WHY DO LANGUAGE MODEL USE PROBABILITIES:
+   Language models predict probability distributions as this allows them to generate diverse and novel text by randomly sampling words. This approach prevents the model from always producing the exact same output for a given input, which would happen if it were a deterministic process. By combining probabilities with a sampling mechanism, language models can generate a wider range of creative outputs while still producing coherent text. In the next activity, you will create your own probability distribution and closely observe how the probability distribution impacts text generation.

@@ -1,0 +1,7 @@
+# In this lab, you will:
+
+# Assign probabilities to each candidate word reflecting the likelihood of it being the appropriate next word given the prompt.
+# Use the random.choices function with the assigned probabilities to sample a candidate word.
+# Explore how altering the prompt (e.g., changing hungry to thirsty or modifying the subject) influences the probability distribution and the predicted next word.
+
+FOR EXAMPLES AND RUNNING PROGRRAMS CLICK THIS LINK - https://colab.research.google.com/drive/17bLNeibBhT-GRmesCglxIIlVlc1lRfnf#scrollTo=UyTT6C0JhGBs
