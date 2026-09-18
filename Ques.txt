@@ -1,0 +1,32 @@
+As mentioned in the article The Power of Language Models, the Oxford English Dictionary has entries for around one million words. Assume that there are actually exactly one million entries: 700,000 entries refer to common words (e.g., house) and 300,000 refer to scientific terms (e.g., photosynthesis). If all common words have exactly the same probability and all scientific terms have the same probability, and the probability of each common word is 5 times as high as the probability of each scientific word, what are the probabilities of “hungry” (a common word) and “photosynthesis” (a scientific term)?
+
+
+(A)P(hungry) = 0.000005 and P(photosynthesis) = 0.000001
+(B)P(hungry)= 0.7 and P(photosynthesis) = 0.3
+(C)P(hungry) = 0.00000143 and P(photosynthesis) = 0.0000033
+check
+(D)P(hungry) = 0.000001316 and P(photosynthesis) = 0.0000002632
+
+Ans. (C)
+Explaination : If you assume that c is the probability of a common word and s is the probability of a scientific word, then 700,000c + 300,000s = 1. This is because the probability of all words has to sum up to 1. There are 700,000 common words and 300,000 scientific terms. All common words have the same probability, and all scientific terms have the same probability. Further, c = 5s since common words have a probability that is 5 times the probability of scientific terms. If you substitute c by 5s, you get 700,000(5s) + 300,000s = 1, which solves to s= 0.0000002632. Therefore, c = 5s = 0.000001316.
+
+
+2nd Question
+
+Consider the following prompt for a language model:
+“The sun set over the Sahara”
+
+
+Which one of the following pairs of lists defines a proper language model probability distribution for this prompt?
+(A) candidate_words = ['desert', 'with', 'ocean', 'the', 'after', 'sun', 'set', 'over']
+probabilities = [0.99, 0.61, 0.001, 0.2, 0.05, 0.0081, 0.0009, 0.03]
+(B) candidate_words = ['desert', 'with', 'ocean', 'the', 'after', 'sun', 'set', 'over']
+probabilities = [0.5, 0.1, -0.019, 0.2, 0.17, 0.0081, 0.0009, 0.04]
+(C) candidate_words = ['desert', 'with', 'ocean', 'the', 'after', 'sun', 'set', 'over']
+probabilities = [0.5, 0.1, 0.001, 0.02, 0.1, 0.0001, 0.0001, 0.03]
+check
+(D) candidate_words = ['desert', 'with', 'ocean', 'the', 'after', 'sun', 'set', 'over']
+probabilities = [0.1, 0.61, 0.001, 0.2, 0.05, 0.0081, 0.0009, 0.03]
+
+Ans: (D)
+Explaination : This may not be a very good language model since, for example, the probability of “the” is twice the probability of the contextually more sensible word “desert”. However, it is a proper probability distribution with all words having non-negative probabilities and the probabilities sum to 1. Since language models are probability distributions over the next word, this proper probability distribution over the next word is a proper language model.
